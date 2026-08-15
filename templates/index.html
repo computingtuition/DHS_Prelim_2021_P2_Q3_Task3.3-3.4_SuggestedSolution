@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanitisers</title>
+</head>
+<body>
+    <!-- FOR TASK 3.3 -->
+    <h1>Sanitisers</h1>
+    <table border="1">
+        <tr>
+            <th>Product Name</th>
+            <th>Active Ingredient</th>
+            <th>Alcohol-Based</th>
+        </tr>
+
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- FOR TASK 3.4 -->
+    <h1>Sanitiser Enquiry</h1>
+    <form action="/submit_form/" method="POST">
+        <p>Active Ingredient: <input name="ingredient"></p>
+        <p><input type="submit"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanitisers</title>
+</head>
+<body>
+    <h1>Sanitisers with Active Ingredient {{ ingredient }}</h1>
+    <table border="1">
+        <tr>
+            <th>Product Name</th>
+            <th>Active Ingredient</th>
+            <th>Alcohol-Based</th>
+        </tr>
+
+        {% for row in result %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
