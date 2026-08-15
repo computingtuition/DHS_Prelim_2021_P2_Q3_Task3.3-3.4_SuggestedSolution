@@ -41,7 +41,7 @@ def submit_form():
     
 
 
-### only for running on repl.it
+### only for running on Google Cloud Run (so that you can preview the app online)
 app.run("0.0.0.0", 8080)
 
 ### for running on your local machine, use this
